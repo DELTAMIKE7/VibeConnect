@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
-
+const dotenv = require("dotenv")
 const plm = require("passport-local-mongoose");
 
-const url = "mongodb://127.0.0.1:27017/fbclone";
+dotenv.config();
+const url = process.env.MONGO_URL; 
 
 mongoose.connect(url, {
   useNewUrlParser: true,

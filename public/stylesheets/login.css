@@ -1,3 +1,6 @@
+:root{
+  --mainFontColor : #8067e5;
+}
 * {
   margin: 0;
   padding: 0;
@@ -26,16 +29,22 @@ header .main .left {
   flex: 1;
   justify-content: left;
 }
-
+header .main .left h1{
+  margin-bottom: 10px;
+  font-size: 5vw;
+  color: var(--mainFontColor);
+  font-weight: 900;
+  font-family:manrope;
+}
 header .main .right {
   flex: 1;
   /* border: 1px solid red; */
 }
 
 header .main .left p {
-  font-size: 28px;
+  font-size: 25px;
   letter-spacing: 0.2px;
-  margin-left: 28px;
+  /* margin-left: 28px; */
   margin-top: -14px;
   font-weight: 400;
 }
